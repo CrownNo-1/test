@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TCP</name>
+    </assembly>
+    <members>
+        <member name="T:TCP.TCP_Create">
+            <summary>
+            服务端与客户端创建，接受与发送
+            </summary>
+        </member>
+        <member name="F:TCP.TCP_Create.socket_client">
+            <summary>
+            客户端对象
+            </summary>
+        </member>
+        <member name="F:TCP.TCP_Create.socket_server">
+            <summary>
+            服务端对象
+            </summary>
+        </member>
+        <member name="T:TCP.TCP_Create.Data">
+            <summary>
+            客户端委托
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:TCP.TCP_Create.Data_Server">
+            <summary>
+            服务端委托
+            </summary>
+            <param name="data">返回的内容</param>
+            <param name="ip">发送内容的用户信息</param>
+        </member>
+        <member name="F:TCP.TCP_Create.socket_server_list">
+            <summary>
+            服务端(存储连接成功的客户端)
+            </summary>
+        </member>
+        <member name="F:TCP.TCP_Create.judgment">
+            <summary>
+            判断是否连接成功，或者判断是否以断开
+            </summary>
+        </member>
+        <member name="M:TCP.TCP_Create.TCP_Server_Create(System.String,System.Int32,TCP.TCP_Create.Data_Server)">
+            <summary>
+            创建服务端
+            </summary>
+            <param name="IP">创建服务端的IP地址</param>
+            <param name="port">端口号</param>
+            /// <param name="method">端口号</param>
+        </member>
+        <member name="M:TCP.TCP_Create.TCP_Server_Listening(System.String)">
+            <summary>
+            监听服务端发来的消息
+            </summary>
+            <param name="ip">内部会处理一个用户的下标</param>
+        </member>
+        <member name="M:TCP.TCP_Create.TCP_Server_Send(System.String,System.String)">
+            <summary>
+            服务端的信息发送
+            </summary>
+            <param name="Information">发送的信息</param>
+            <param name="index">等于-1的时候就是全部发送，单个发送的时候输入对方的端口号就能进行发送</param>
+        </member>
+        <member name="M:TCP.TCP_Create.TCP_Client_Create(System.String,System.Int32,TCP.TCP_Create.Data)">
+            <summary>
+            创建服务端并会自动监听，服务端发来的消息
+            </summary>
+            <param name="IP">连接服务器的ip</param>
+            <param name="port">连接服务器的端口号</param>
+            <param name="method">一个方法用来做接受</param>
+        </member>
+        <member name="M:TCP.TCP_Create.TCP_Client_Listening">
+            <summary>
+            监听服务器发来的消息
+            注意:假设服务端断开那么会返回已断开
+            </summary>
+        </member>
+        <member name="M:TCP.TCP_Create.TCP_Client_Send(System.String)">
+            <summary>
+            客户端的发送信息
+            </summary>
+            <param name="Information">需要发送的内容</param>
+        </member>
+    </members>
+</doc>

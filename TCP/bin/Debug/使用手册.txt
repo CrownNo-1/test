@@ -1,0 +1,42 @@
+该类所有字段与属性都是静态的所以不管是客户端还是服务端都只能进行一次创建(该类的方法都是静态不需要进行一个实例调用方法)
+
+命名空间:using TCP;
+
+类名:TCP_Create;
+
+调用格式:TCP_Create.方法();
+注意方法会有异常抛上来，注意使用try去处理异常
+
+TCP_Server_Create(string IP, int port, Data method = null)：
+功能:
+创建一个服务端
+参数:
+IP:创建的IP号要与你计算机的一致或者是工控机
+port:是端口号
+method:一个（string,string）的方法给到委托传入一个方法一旦客户端由消息发送过来那么就会调用该方法(第一个是内容，第二个是发送的端口号)(传给该委托一定是要静态的方法)
+
+
+TCP_Server_Send(string Information,int index)：
+功能:
+给客户端发送消息
+参数:
+Information：发送的内容
+index:==-1等时候是给所有的客户端进行发送(单个发送的时候输入对方的端口号就能进行发送)
+
+
+TCP_Client_Create(string IP, int port, Data method = null)：
+功能:
+创建一个客户端
+参数:
+IP:服务端的IP地址
+port：端口号
+method:一个委托传入一个方法一旦服务端由消息发送过来那么就会调用该方法(传给该委托一定是要静态的方法)
+
+
+TCP_Client_Send(string Information)：
+功能:
+给服务端进行一个内容的发送
+参数:
+Information:需要发送的内容
+
+调用代码:TCP.TCP_Create.TCP_Server_Create("172.20.10.4", 1, a);

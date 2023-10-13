@@ -1,0 +1,14 @@
+E:\TCP\TCP\bin\Debug\TCP.dll
+E:\TCP\TCP\bin\Debug\TCP.pdb
+E:\TCP\TCP\obj\Debug\TCP.csproj.AssemblyReference.cache
+E:\TCP\TCP\obj\Debug\TCP.csproj.CoreCompileInputs.cache
+E:\TCP\TCP\obj\Debug\TCP.dll
+E:\TCP\TCP\obj\Debug\TCP.pdb
+D:\TCP\TCP\bin\Debug\TCP.dll
+D:\TCP\TCP\bin\Debug\TCP.pdb
+D:\TCP\TCP\obj\Debug\TCP.csproj.CoreCompileInputs.cache
+D:\TCP\TCP\obj\Debug\TCP.dll
+D:\TCP\TCP\obj\Debug\TCP.pdb
+D:\TCP\TCP\bin\Debug\TCP.xml
+D:\TCP\TCP\obj\Debug\TCP.csproj.AssemblyReference.cache
+E:\TCP\TCP\bin\Debug\TCP.xml
